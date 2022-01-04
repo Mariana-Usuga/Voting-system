@@ -1,38 +1,53 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;1,400&display=swap');
+
+body{
+  font-family: 'Nunito Sans', sans-serif;
+}
+.container1 {
+  display: flex;
+  justify-content:space-evenly;
+  flex-wrap: wrap;
+}
+.container2{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.candidates{
+  transform:translate(0,0);
+  font-size: 1.5rem;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.candidates-hide{
+  transform:translate(-100%,0);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.btnVote, .showVote, .showAllVotes{
+  margin-bottom: 20px;
+  padding: 8px;
+  font-weight: bolder;
   color: white;
+  background-color:#5162DD;
+  margin-right: 10px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+}
+.showVote{
+  background-color: #51BADD;
+  font-size: 1rem;
+}
+.showAllVotes{
+ background-color: #3702FF;
+ margin-left: 34%;
+ margin-top: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+/*---------Input---------------*/
+.label{
+  font-size: 1.3rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*---------Individual Votes----*/
+.individualVotes{
+  text-align: center;
 }
